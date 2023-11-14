@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+}
+@layer components{
+  .herobtn{
+    @apply px-6 py-2 border border-[#e9e6e1] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#c7c2c0]/40
+  }
+  .ContactInp{
+    @apply outline-none bg-slate-400/10 rounded-sm  px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f59578]/40 focus:text-[#f59578]/40
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.scroll-snap-y {
+  scroll-snap-type: y mandatory !important;
+  overflow-y: scroll !important;
+}
+
+/* Snap each section to the start of the viewport */
+.scroll-snap-start {
+  scroll-snap-align: start !important;
+}
+
+/* Snap each section to the center of the viewport */
+.scroll-snap-center {
+  scroll-snap-align: center !important;
+}
