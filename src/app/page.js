@@ -9,9 +9,12 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <main>
+    <div className="bg-slate-50">
+      
+      
       <Header/>
-      <section id="hero" className="snap-start">
+     
+       <section id="hero" className="snap-center">
         <Hero/>
       </section>
 
@@ -27,14 +30,14 @@ export default function Home() {
         <Skills/>
       </section>
 
-      <section id="pro" className="snap-start">
+     <section id="pro" className="snap-start">
         <Projects/>
       </section>
 
-      <section id="contact" className="snap-start">
+       <section id="contact" className="snap-start">
         <ContactMe/>
-      </section>
-      <script
+      </section> 
+      {/* <script
           className="animate-ping"
           data-name="BMC-Widget"
           data-cfasync="false"
@@ -46,7 +49,7 @@ export default function Home() {
           data-position="Right"
           data-x_margin="18"
           data-y_margin="18"
-        ></script>
-    </main>
+        ></script> */}
+    </div>
   )
 }

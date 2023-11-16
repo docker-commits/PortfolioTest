@@ -7,7 +7,7 @@
 }
 @layer components{
   .herobtn{
-    @apply px-6 py-2 border border-[#e9e6e1] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#c7c2c0]/40
+    @apply px-3 md:px-6 py-2 border border-[#e9e6e1] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#c7c2c0]/40
   }
   .ContactInp{
     @apply outline-none bg-slate-400/10 rounded-sm  px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#f59578]/40 focus:text-[#f59578]/40
